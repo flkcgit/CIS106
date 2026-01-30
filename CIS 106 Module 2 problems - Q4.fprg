@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CIS 106 Module 2 problems - Q4"/>
+        <attribute name="authors" value="flkc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-01-22 02:48:04 pm"/>
+        <attribute name="created" value="ZmxrYztERVNLVE9QLVRJRkY7MjAyNi0wMS0yMjswMjo0MTo1OCBwbTsyNjM5"/>
+        <attribute name="edited" value="ZmxrYztERVNLVE9QLVRJRkY7MjAyNi0wMS0yMjswMjo0ODowNCBwbTsxOzI3NDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="creditshours" type="Integer" array="False" size=""/>
+            <declare name="tuitionperhour" type="Integer" array="False" size=""/>
+            <declare name="labfee" type="Integer" array="False" size=""/>
+            <declare name="totaltuition" type="Integer" array="False" size=""/>
+            <assign variable="tuitionperhour" expression="250"/>
+            <assign variable="labfee" expression="100"/>
+            <input variable="lastname"/>
+            <input variable="creditshours"/>
+            <assign variable="totaltuition" expression="creditshours * tuitionperhour + labfee"/>
+            <output expression="&quot;Total tution for &quot; &amp; lastname &amp; &quot; is $&quot; &amp; totaltuition &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CIS 106 Module 2 problems - Q5"/>
+        <attribute name="authors" value="flkc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-01-22 07:08:22 pm"/>
+        <attribute name="created" value="ZmxrYztERVNLVE9QLVRJRkY7MjAyNi0wMS0yMjswMjo0ODowOCBwbTsyNjQx"/>
+        <attribute name="edited" value="ZmxrYztERVNLVE9QLVRJRkY7MjAyNi0wMS0yMjswNzowODoyMiBwbTsyOzI3NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="itemprice" type="Real" array="False" size=""/>
+            <declare name="discount" type="Real" array="False" size=""/>
+            <declare name="discountamount" type="Real" array="False" size=""/>
+            <declare name="discountedprice" type="Real" array="False" size=""/>
+            <input variable="itemprice"/>
+            <input variable="discount"/>
+            <assign variable="discountamount" expression="itemprice * discount"/>
+            <assign variable="discountedprice" expression="itemprice - discountamount"/>
+            <output expression="&quot;The item discount amount is $&quot; &amp; discountamount &amp; &quot; and the discounted price is $&quot; &amp; discountedprice &amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

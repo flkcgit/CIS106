@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CIS 106 Module 2 problems - Q2"/>
+        <attribute name="authors" value="flkc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-01-22 02:36:40 pm"/>
+        <attribute name="created" value="ZmxrYztERVNLVE9QLVRJRkY7MjAyNi0wMS0yMjswMjozMjoxOCBwbTsyNjM1"/>
+        <attribute name="edited" value="ZmxrYztERVNLVE9QLVRJRkY7MjAyNi0wMS0yMjswMjozNjo0MCBwbTsxOzI3NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="hours" type="Integer" array="False" size=""/>
+            <declare name="payrate" type="Real" array="False" size=""/>
+            <declare name="grosspay" type="Integer" array="False" size=""/>
+            <input variable="lastname"/>
+            <input variable="hours"/>
+            <input variable="payrate"/>
+            <assign variable="grosspay" expression="hours * payrate"/>
+            <output expression="lastname &amp; &quot; gross pay is $&quot; &amp; grosspay &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

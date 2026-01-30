@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CIS 106 Module 2 problems - Q1"/>
+        <attribute name="authors" value="flkc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-01-21 07:35:24 pm"/>
+        <attribute name="created" value="ZmxrYztERVNLVE9QLVRJRkY7MjAyNi0wMS0yMTswNzoyODo0NyBwbTsyNjQ2"/>
+        <attribute name="edited" value="ZmxrYztERVNLVE9QLVRJRkY7MjAyNi0wMS0yMTswNzozNToyNCBwbTsxOzI3NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qty" type="Real" array="False" size=""/>
+            <declare name="unitprice" type="Real" array="False" size=""/>
+            <declare name="extprice" type="Real" array="False" size=""/>
+            <input variable="qty"/>
+            <input variable="unitprice"/>
+            <assign variable="extprice" expression="qty * unitprice"/>
+            <output expression="&quot;The extended price is $&quot; &amp; extprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

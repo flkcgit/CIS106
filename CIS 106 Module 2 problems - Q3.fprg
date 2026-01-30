@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CIS 106 Module 2 problems - Q3"/>
+        <attribute name="authors" value="flkc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-01-22 02:41:49 pm"/>
+        <attribute name="created" value="ZmxrYztERVNLVE9QLVRJRkY7MjAyNi0wMS0yMjswMjozNjo0OCBwbTsyNjQy"/>
+        <attribute name="edited" value="ZmxrYztERVNLVE9QLVRJRkY7MjAyNi0wMS0yMjswMjo0MTo0OSBwbTsxOzI3NDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="length" type="Real" array="False" size=""/>
+            <declare name="width" type="Real" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="circumference" type="Real" array="False" size=""/>
+            <input variable="length"/>
+            <input variable="width"/>
+            <assign variable="area" expression="length * width"/>
+            <assign variable="circumference" expression="2 * (length + width)"/>
+            <output expression="&quot;The area is &quot; &amp; area &amp; &quot;. &quot; &amp;&#13;&#10;&quot;The circumference is &quot; &amp; circumference &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
