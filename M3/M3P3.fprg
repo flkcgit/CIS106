@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M3P3"/>
+        <attribute name="authors" value="flkc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-01-31 02:45:02 PM"/>
+        <attribute name="created" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMS0zMTswMjo0MjoyMiBQTTsyNzQ1"/>
+        <attribute name="edited" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMS0zMTswMjo0NTowMiBQTTsxOzI4NTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="firstFriend" type="String" array="False" size=""/>
+            <input variable="firstFriend"/>
+            <declare name="secondFriend" type="String" array="False" size=""/>
+            <input variable="secondFriend"/>
+            <declare name="amount" type="Real" array="False" size=""/>
+            <input variable="amount"/>
+            <declare name="evenAmount" type="Real" array="False" size=""/>
+            <assign variable="evenAmount" expression="amount / 3"/>
+            <output expression="&quot;Job amount received is &quot; &amp; amount &amp; &quot; and splited as at follows:&quot;" newline="True"/>
+            <output expression="firstFriend &amp; &quot;: $&quot; &amp; evenAmount" newline="True"/>
+            <output expression="secondFriend &amp; &quot;: $&quot; &amp; evenAmount" newline="True"/>
+            <output expression="&quot;You: $&quot; &amp; evenAmount" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

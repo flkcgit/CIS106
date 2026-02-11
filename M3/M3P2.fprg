@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M3P2"/>
+        <attribute name="authors" value="flkc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-01-31 02:42:17 PM"/>
+        <attribute name="created" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMS0zMTswMjozMTo0OSBQTTsyNzUy"/>
+        <attribute name="edited" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMS0zMTswMjo0MjoxNyBQTTsxOzI4NTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastName" type="String" array="False" size=""/>
+            <input variable="lastName"/>
+            <declare name="midterm" type="Integer" array="False" size=""/>
+            <input variable="midterm"/>
+            <declare name="final" type="Integer" array="False" size=""/>
+            <input variable="final"/>
+            <if expression="midterm &lt; 0 or midterm &gt; 100">
+                <then>
+                    <output expression="&quot;Error : The midterm score must between 0 to 100&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="final &lt; 0 or final &gt; 100">
+                <then>
+                    <output expression="&quot;Error : The final exam score must between 0 to 100&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="final &gt;= 0 and final &lt;= 100 and midterm &gt;= 0 and midterm &lt;= 100">
+                <then>
+                    <declare name="totalExam" type="Real" array="False" size=""/>
+                    <assign variable="totalExam" expression="midterm * 0.4 + final * 0.6"/>
+                    <output expression="lastName &amp; &quot;: total exam point is &quot; &amp; totalExam &amp; &quot;.&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M3P1"/>
+        <attribute name="authors" value="flkc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-01-31 02:31:34 PM"/>
+        <attribute name="created" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMS0zMTswMTo1MToxMyBQTTsyNzQ0"/>
+        <attribute name="edited" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMS0zMTswMjozMTozNCBQTTs0OzI4NTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="stockSymbol" type="String" array="False" size=""/>
+            <input variable="stockSymbol"/>
+            <declare name="numberOfShare" type="Integer" array="False" size=""/>
+            <input variable="numberOfShare"/>
+            <declare name="cost" type="Real" array="False" size=""/>
+            <input variable="cost"/>
+            <declare name="amount" type="Real" array="False" size=""/>
+            <assign variable="amount" expression="numberOfShare * cost"/>
+            <output expression="&quot;Total Amount for &quot; &amp; numberOfShare &amp; &quot; share(s) &quot; &amp; stockSymbol &amp; &quot; is $&quot; &amp; amount &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

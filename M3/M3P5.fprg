@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M3P5"/>
+        <attribute name="authors" value="flkc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-01-31 03:03:55 PM"/>
+        <attribute name="created" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMS0zMTswMjo1ODowNiBQTTsyNzU0"/>
+        <attribute name="edited" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMS0zMTswMzowMzo1NSBQTTsxOzI4NTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radius" type="Real" array="False" size=""/>
+            <input variable="radius"/>
+            <declare name="tmpPi" type="Real" array="False" size=""/>
+            <assign variable="tmpPi" expression="3.14"/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <assign variable="area" expression="tmpPi * radius * radius"/>
+            <declare name="perimeter" type="Real" array="False" size=""/>
+            <assign variable="perimeter" expression="2 * tmpPi * radius"/>
+            <output expression="&quot;The radius is &quot; &amp; radius &amp; &quot;, the area is &quot; &amp; area &amp; &quot;, the perimeter is &quot; &amp; perimeter &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

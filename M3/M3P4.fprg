@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M3P4"/>
+        <attribute name="authors" value="flkc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-01-31 02:58:01 PM"/>
+        <attribute name="created" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMS0zMTswMjo0NTo0MCBQTTsyNzQ4"/>
+        <attribute name="edited" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMS0zMTswMjo1ODowMSBQTTsxOzI4NTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="make" type="String" array="False" size=""/>
+            <input variable="make"/>
+            <declare name="model" type="String" array="False" size=""/>
+            <input variable="model"/>
+            <declare name="msrp" type="Integer" array="False" size=""/>
+            <input variable="msrp"/>
+            <declare name="discount" type="Real" array="False" size=""/>
+            <input variable="discount"/>
+            <declare name="amountOff" type="Real" array="False" size=""/>
+            <assign variable="amountOff" expression="msrp * discount"/>
+            <declare name="discountPrice" type="Real" array="False" size=""/>
+            <assign variable="discountPrice" expression="msrp - amountOff"/>
+            <output expression="&quot;The Information of auto&quot;" newline="True"/>
+            <output expression="&quot;Make:&quot; &amp; make" newline="True"/>
+            <output expression="&quot;Model: &quot; &amp; model" newline="True"/>
+            <output expression="&quot;MSRP: $&quot; &amp; msrp" newline="True"/>
+            <output expression="&quot;Discount percent: &quot; &amp; discount" newline="True"/>
+            <output expression="&quot;Amount Off: $&quot; &amp; amountOff" newline="True"/>
+            <output expression="&quot;Discounted Price: $&quot; &amp; discountPrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
