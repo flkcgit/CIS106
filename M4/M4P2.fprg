@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M4P2"/>
+        <attribute name="authors" value="flkc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-10 10:30:53 PM"/>
+        <attribute name="created" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMi0xMDsxMDoyNzo0NiBQTTsyNzUx"/>
+        <attribute name="edited" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMi0xMDsxMDozMDo1MyBQTTsxOzI4NTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="purchasePrice" type="Real" array="False" size=""/>
+            <input variable="purchasePrice"/>
+            <declare name="currentPrice" type="Real" array="False" size=""/>
+            <input variable="currentPrice"/>
+            <declare name="quantity" type="Real" array="False" size=""/>
+            <input variable="quantity"/>
+            <declare name="changeInValue" type="Real" array="False" size=""/>
+            <assign variable="changeInValue" expression="(currentPrice - purchasePrice) * quantity"/>
+            <output expression="&quot;Increase (or decrease) of the value of stock &quot; &amp; changeInValue" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

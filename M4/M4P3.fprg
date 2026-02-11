@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M4P3"/>
+        <attribute name="authors" value="flkc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-10 10:41:13 PM"/>
+        <attribute name="created" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMi0xMDsxMDozMDo1NiBQTTsyNzQ2"/>
+        <attribute name="edited" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMi0xMDsxMDo0MToxMyBQTTs0OzI4NTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tip1Rate" type="Real" array="False" size=""/>
+            <assign variable="tip1Rate" expression="0.15"/>
+            <declare name="tip2Rate" type="Real" array="False" size=""/>
+            <assign variable="tip2Rate" expression="0.18"/>
+            <declare name="tip3Rate" type="Real" array="False" size=""/>
+            <assign variable="tip3Rate" expression="0.2"/>
+            <declare name="mealTotal" type="Real" array="False" size=""/>
+            <input variable="mealTotal"/>
+            <declare name="tip1" type="Real" array="False" size=""/>
+            <assign variable="tip1" expression="mealTotal * tip1Rate"/>
+            <declare name="totalWithTip1" type="Real" array="False" size=""/>
+            <assign variable="totalWithTip1" expression="mealTotal + tip1"/>
+            <declare name="tip2" type="Real" array="False" size=""/>
+            <assign variable="tip2" expression="mealTotal * tip2Rate"/>
+            <declare name="totalWithTip2" type="Real" array="False" size=""/>
+            <assign variable="totalWithTip2" expression="mealTotal + tip2"/>
+            <declare name="tip3" type="Real" array="False" size=""/>
+            <assign variable="tip3" expression="mealTotal * tip3Rate"/>
+            <declare name="totalWithTip3" type="Real" array="False" size=""/>
+            <assign variable="totalWithTip3" expression="mealTotal + tip3"/>
+            <output expression="&quot;With &quot; &amp; (tip1Rate*100) &amp;&quot;% Tip:&quot;" newline="True"/>
+            <output expression="&quot;Total : &quot; &amp; mealTotal" newline="True"/>
+            <output expression="&quot;Tip : &quot; &amp; tip1" newline="True"/>
+            <output expression="&quot;Total with Tip : &quot; &amp; totalWithTip1" newline="True"/>
+
+            <output expression="&quot;With &quot; &amp; (tip2Rate*100) &amp;&quot;% Tip:&quot;" newline="True"/>
+            <output expression="&quot;Total : &quot; &amp; mealTotal" newline="True"/>
+            <output expression="&quot;Tip : &quot; &amp; tip2" newline="True"/>
+            <output expression="&quot;Total with Tip : &quot; &amp; totalWithTip2" newline="True"/>
+
+            <output expression="&quot;With &quot; &amp; (tip3Rate*100) &amp;&quot;% Tip:&quot;" newline="True"/>
+            <output expression="&quot;Total : &quot; &amp; mealTotal" newline="True"/>
+            <output expression="&quot;Tip : &quot; &amp; tip3" newline="True"/>
+            <output expression="&quot;Total with Tip : &quot; &amp; totalWithTip3" newline="True"/>
+
+        </body>
+    </function>
+</flowgorithm>

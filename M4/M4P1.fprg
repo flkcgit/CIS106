@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M4P1"/>
+        <attribute name="authors" value="flkc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-10 10:27:44 PM"/>
+        <attribute name="created" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMi0xMDsxMDoxMDo0MiBQTTsyNzM5"/>
+        <attribute name="edited" value="ZmxrYztERVNLVE9QLTFHSlBJN0k7MjAyNi0wMi0xMDsxMDoyNzo0NCBQTTsyOzI4NTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="examOneWeight" type="Real" array="False" size=""/>
+            <assign variable="examOneWeight" expression="0.6"/>
+            <declare name="examTwoWeight" type="Real" array="False" size=""/>
+            <assign variable="examTwoWeight" expression="0.4"/>
+            <declare name="examOne" type="Integer" array="False" size=""/>
+            <input variable="examOne"/>
+            <declare name="examTwo" type="Integer" array="False" size=""/>
+            <input variable="examTwo"/>
+            <declare name="totalScore" type="Real" array="False" size=""/>
+            <assign variable="totalScore" expression="examOne * examOneWeight + examTwo * examTwoWeight"/>
+            <output expression="&quot;Total Exam Score is &quot; &amp; totalScore" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
