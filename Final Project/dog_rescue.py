@@ -23,11 +23,11 @@ class Dog:
         self.age = age
         self.weight = weight
         
-    def printDog(self):        
-        print(f"\n{"Dog Name:".ljust(30," ")}{self.name}")
-        print(f"{"Dog Breed:".ljust(30," ")}{self.breed}")        
-        print(f"{"Age:".ljust(30," ")}{self.age}")
-        print(f"{"Weight:".ljust(30," ")}{self.weight}\n")
+    # def printDog(self):        
+    #     print(f"\n{"Dog Name:".ljust(30," ")}{self.name}")
+    #     print(f"{"Dog Breed:".ljust(30," ")}{self.breed}")        
+    #     print(f"{"Age:".ljust(30," ")}{self.age}")
+    #     print(f"{"Weight:".ljust(30," ")}{self.weight}\n")
 
 
 def menu():
